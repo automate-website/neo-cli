@@ -9,11 +9,12 @@ RUN apt-get update && apt-get install -y \
     libunwind8-dev  \
     libicu-dev      \
     wget            \
-    unzip
+    unzip           \
+ && rm -rf /var/lib/apt/lists/*
 
-RUN mkdir -p /tmp/neo-cli && \
-    wget -P /tmp/neo-cli https://github.com/neo-project/neo-cli/releases/download/${NEO_CLI_VERSION}/neo-cli-ubuntu.16.10-x64.zip && \
-    unzip /tmp/neo-cli/neo-cli-ubuntu.16.10-x64.zip -d /opt && \
-    rm -rf /tmp/neo-cli && \
-    chmod +x /opt/neo-cli/neo-cli && \
-    ln -fsn /opt/neo-cli/neo-cli /bin/neo
+RUN mkdir -p /tmp/neo-cli \
+ && wget -P /tmp/neo-cli https://github.com/neo-project/neo-cli/releases/download/${NEO_CLI_VERSION}/neo-cli-ubuntu.16.10-x64.zip \
+ && unzip /tmp/neo-cli/neo-cli-ubuntu.16.10-x64.zip -d /opt \
+ && rm -rf /tmp/neo-cli \
+ && chmod +x /opt/neo-cli/neo-cli \
+ && ln -fsn /opt/neo-cli/neo-cli /bin/neo
