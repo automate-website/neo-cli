@@ -1,6 +1,6 @@
 ## Prerequisites
 
-You will need Window or Linux. Use a virtual machine if you have a Mac. Ubuntu 14 and 16 are supported. Ubuntu 17 is not supported.
+You will need Windows or Linux. Use a virtual machine if you have a Mac. Ubuntu 14 and 16 are supported. Ubuntu 17 is not supported.
 
 Install [.NET Core](https://www.microsoft.com/net/download/core).
 
