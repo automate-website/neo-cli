@@ -45,5 +45,5 @@ See [documentation](http://docs.neo.org/en-us/node/cli.html). E.g. try `show sta
 ## Run within docker container
 
 ```
-docker run -it automatewebsite/neo-cli /bin/neo
+docker run -it automatewebsite/neo-cli /usr/bin/neo
 ```

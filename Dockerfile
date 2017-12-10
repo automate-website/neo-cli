@@ -17,4 +17,4 @@ RUN mkdir -p /tmp/neo-cli \
  && unzip /tmp/neo-cli/neo-cli-ubuntu.16.10-x64.zip -d /opt \
  && rm -rf /tmp/neo-cli \
  && chmod +x /opt/neo-cli/neo-cli \
- && ln -fsn /opt/neo-cli/neo-cli /bin/neo
+ && ln -fsn /opt/neo-cli/neo-cli /usr/bin/neo
